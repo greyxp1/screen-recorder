@@ -15,6 +15,7 @@ name = "Screen Recorder"
 version = "1.1.0"
 min_noctalia = "5.0.0"
 author = "noctalia"
+license = "MIT"
 tags = ["recording", "screen", "video"]
 icon = "video"
 description = "Record the screen with gpu-screen-recorder."
