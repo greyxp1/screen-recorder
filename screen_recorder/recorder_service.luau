@@ -170,7 +170,7 @@ local function buildRecordCommand()
     local dir = outputDirectory()
 
     local pattern = cfg("filename_pattern")
-    local filename = `{os.date(pattern)}.mp4`
+    local filename = `{noctalia.formatTime(pattern)}.mp4`
     outputPath = `{dir}{filename}`
 
     local fps = cfg("frame_rate")
