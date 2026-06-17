@@ -1,0 +1,8 @@
+{
+  "settings": {
+    "target_lang": {
+      "label": "Default target language",
+      "description": "Language code used when no language is given (e.g. en, fr, es)."
+    }
+  }
+}

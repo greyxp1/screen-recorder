@@ -12,7 +12,7 @@
 
 id = "noctalia/screen_recorder"
 name = "Screen Recorder"
-version = "1.1.5"
+version = "1.1.6"
 min_noctalia = "5.0.0"
 author = "noctalia"
 license = "MIT"
@@ -23,32 +23,32 @@ description = "Record the screen with gpu-screen-recorder."
 [[setting]]
 key = "video_source"
 type = "select"
-label = "Video source"
+label_key = "settings.video_source.label"
 default = "portal"
-description = "GPU Screen Recorder capture mode. Focused records Noctalia's focused monitor."
+description_key = "settings.video_source.description"
 options = [
-  { value = "focused", label = "Focused" },
-  { value = "portal", label = "Portal" },
-  { value = "region", label = "Region" },
+  { value = "focused", label_key = "settings.video_source.options.focused" },
+  { value = "portal", label_key = "settings.video_source.options.portal" },
+  { value = "region", label_key = "settings.video_source.options.region" },
 ]
 
 [[setting]]
 key = "directory"
 type = "folder"
-label = "Output directory"
-description = "Defaults to ~/Videos when empty"
+label_key = "settings.directory.label"
+description_key = "settings.directory.description"
 
 [[setting]]
 key = "filename_pattern"
 type = "string"
-label = "Filename pattern"
+label_key = "settings.filename_pattern.label"
 default = "recording_%Y%m%d_%H%M%S"
-description = "Date-format pattern without extension; use %s for Unix timestamp"
+description_key = "settings.filename_pattern.description"
 
 [[setting]]
 key = "frame_rate"
 type = "int"
-label = "Frame rate"
+label_key = "settings.frame_rate.label"
 default = 60
 min = 1
 max = 240
@@ -56,96 +56,96 @@ max = 240
 [[setting]]
 key = "video_codec"
 type = "select"
-label = "Video codec"
+label_key = "settings.video_codec.label"
 default = "h264"
 options = [
-  { value = "h264", label = "H.264" },
-  { value = "hevc", label = "HEVC" },
-  { value = "av1", label = "AV1" },
-  { value = "vp8", label = "VP8" },
-  { value = "vp9", label = "VP9" },
+  { value = "h264", label_key = "settings.video_codec.options.h264" },
+  { value = "hevc", label_key = "settings.video_codec.options.hevc" },
+  { value = "av1", label_key = "settings.video_codec.options.av1" },
+  { value = "vp8", label_key = "settings.video_codec.options.vp8" },
+  { value = "vp9", label_key = "settings.video_codec.options.vp9" },
 ]
 
 [[setting]]
 key = "quality"
 type = "select"
-label = "Quality"
+label_key = "settings.quality.label"
 default = "very_high"
 options = [
-  { value = "medium", label = "Medium" },
-  { value = "high", label = "High" },
-  { value = "very_high", label = "Very high" },
-  { value = "ultra", label = "Ultra" },
+  { value = "medium", label_key = "settings.quality.options.medium" },
+  { value = "high", label_key = "settings.quality.options.high" },
+  { value = "very_high", label_key = "settings.quality.options.very_high" },
+  { value = "ultra", label_key = "settings.quality.options.ultra" },
 ]
 
 [[setting]]
 key = "resolution"
 type = "string"
-label = "Resolution"
+label_key = "settings.resolution.label"
 default = "original"
-description = "\"original\" or WIDTHxHEIGHT, e.g. 1920x1080"
+description_key = "settings.resolution.description"
 
 [[setting]]
 key = "audio_source"
 type = "select"
-label = "Audio source"
+label_key = "settings.audio_source.label"
 default = "default_output"
 options = [
-  { value = "default_output", label = "System output" },
-  { value = "default_input", label = "Microphone" },
-  { value = "both", label = "Output + microphone" },
-  { value = "none", label = "No audio" },
+  { value = "default_output", label_key = "settings.audio_source.options.default_output" },
+  { value = "default_input", label_key = "settings.audio_source.options.default_input" },
+  { value = "both", label_key = "settings.audio_source.options.both" },
+  { value = "none", label_key = "settings.audio_source.options.none" },
 ]
 
 [[setting]]
 key = "audio_codec"
 type = "select"
-label = "Audio codec"
+label_key = "settings.audio_codec.label"
 default = "opus"
 options = [
-  { value = "opus", label = "Opus" },
-  { value = "aac", label = "AAC" },
-  { value = "flac", label = "FLAC" },
+  { value = "opus", label_key = "settings.audio_codec.options.opus" },
+  { value = "aac", label_key = "settings.audio_codec.options.aac" },
+  { value = "flac", label_key = "settings.audio_codec.options.flac" },
 ]
 
 [[setting]]
 key = "show_cursor"
 type = "bool"
-label = "Show cursor"
+label_key = "settings.show_cursor.label"
 default = true
 
 [[setting]]
 key = "color_range"
 type = "select"
-label = "Color range"
+label_key = "settings.color_range.label"
 default = "limited"
 options = [
-  { value = "limited", label = "Limited" },
-  { value = "full", label = "Full" },
+  { value = "limited", label_key = "settings.color_range.options.limited" },
+  { value = "full", label_key = "settings.color_range.options.full" },
 ]
 
 [[setting]]
 key = "copy_to_clipboard"
 type = "bool"
-label = "Copy path to clipboard"
+label_key = "settings.copy_to_clipboard.label"
 default = false
 
 [[setting]]
 key = "hide_inactive"
 type = "bool"
-label = "Hide widget when idle"
+label_key = "settings.hide_inactive.label"
 default = false
 
 [[setting]]
 key = "replay_enabled"
 type = "bool"
-label = "Enable replay buffer"
+label_key = "settings.replay_enabled.label"
 default = false
 
 [[setting]]
 key = "replay_duration"
 type = "int"
-label = "Replay seconds"
+label_key = "settings.replay_duration.label"
 default = 30
 min = 5
 max = 3600
@@ -154,18 +154,18 @@ visible_when = { key = "replay_enabled", values = ["true"] }
 [[setting]]
 key = "replay_storage"
 type = "select"
-label = "Replay storage"
+label_key = "settings.replay_storage.label"
 default = "ram"
 options = [
-  { value = "ram", label = "RAM" },
-  { value = "disk", label = "Disk" },
+  { value = "ram", label_key = "settings.replay_storage.options.ram" },
+  { value = "disk", label_key = "settings.replay_storage.options.disk" },
 ]
 visible_when = { key = "replay_enabled", values = ["true"] }
 
 [[setting]]
 key = "restore_portal"
 type = "bool"
-label = "Restore portal session"
+label_key = "settings.restore_portal.label"
 default = false
 advanced = true
 

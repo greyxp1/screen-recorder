@@ -14,5 +14,99 @@
     "replay-stopped": "Tampon de relecture arrêté",
     "replay-saved": "Relecture sauvegardée",
     "replay-active": "Tampon de relecture actif"
+  },
+  "settings": {
+    "video_source": {
+      "label": "Source vidéo",
+      "description": "Mode de capture de GPU Screen Recorder. Focused enregistre l'écran actif de Noctalia.",
+      "options": {
+        "focused": "Écran actif",
+        "portal": "Portail",
+        "region": "Région"
+      }
+    },
+    "directory": {
+      "label": "Dossier de sortie",
+      "description": "Utilise ~/Videos par défaut lorsque vide"
+    },
+    "filename_pattern": {
+      "label": "Modèle de nom de fichier",
+      "description": "Modèle de date sans extension; utilisez %s pour l'horodatage Unix"
+    },
+    "frame_rate": {
+      "label": "Images par seconde"
+    },
+    "video_codec": {
+      "label": "Codec vidéo",
+      "options": {
+        "h264": "H.264",
+        "hevc": "HEVC",
+        "av1": "AV1",
+        "vp8": "VP8",
+        "vp9": "VP9"
+      }
+    },
+    "quality": {
+      "label": "Qualité",
+      "options": {
+        "medium": "Moyenne",
+        "high": "Haute",
+        "very_high": "Très haute",
+        "ultra": "Ultra"
+      }
+    },
+    "resolution": {
+      "label": "Résolution",
+      "description": "\"original\" ou LARGEURxHAUTEUR, par exemple 1920x1080"
+    },
+    "audio_source": {
+      "label": "Source audio",
+      "options": {
+        "default_output": "Sortie système",
+        "default_input": "Microphone",
+        "both": "Sortie + microphone",
+        "none": "Aucun audio"
+      }
+    },
+    "audio_codec": {
+      "label": "Codec audio",
+      "options": {
+        "opus": "Opus",
+        "aac": "AAC",
+        "flac": "FLAC"
+      }
+    },
+    "show_cursor": {
+      "label": "Afficher le curseur"
+    },
+    "color_range": {
+      "label": "Plage de couleurs",
+      "options": {
+        "limited": "Limitée",
+        "full": "Complète"
+      }
+    },
+    "copy_to_clipboard": {
+      "label": "Copier le chemin dans le presse-papiers"
+    },
+    "hide_inactive": {
+      "label": "Masquer le widget au repos"
+    },
+    "replay_enabled": {
+      "label": "Activer le tampon de relecture"
+    },
+    "replay_duration": {
+      "label": "Secondes de relecture"
+    },
+    "replay_storage": {
+      "label": "Stockage de relecture",
+      "options": {
+        "ram": "RAM",
+        "disk": "Disque"
+      }
+    },
+    "restore_portal": {
+      "label": "Restaurer la session du portail"
+    }
   }
 }

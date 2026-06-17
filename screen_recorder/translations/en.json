@@ -14,5 +14,99 @@
     "replay-stopped": "Replay buffer stopped",
     "replay-saved": "Replay saved",
     "replay-active": "Replay buffer active"
+  },
+  "settings": {
+    "video_source": {
+      "label": "Video source",
+      "description": "GPU Screen Recorder capture mode. Focused records Noctalia's focused monitor.",
+      "options": {
+        "focused": "Focused",
+        "portal": "Portal",
+        "region": "Region"
+      }
+    },
+    "directory": {
+      "label": "Output directory",
+      "description": "Defaults to ~/Videos when empty"
+    },
+    "filename_pattern": {
+      "label": "Filename pattern",
+      "description": "Date-format pattern without extension; use %s for Unix timestamp"
+    },
+    "frame_rate": {
+      "label": "Frame rate"
+    },
+    "video_codec": {
+      "label": "Video codec",
+      "options": {
+        "h264": "H.264",
+        "hevc": "HEVC",
+        "av1": "AV1",
+        "vp8": "VP8",
+        "vp9": "VP9"
+      }
+    },
+    "quality": {
+      "label": "Quality",
+      "options": {
+        "medium": "Medium",
+        "high": "High",
+        "very_high": "Very high",
+        "ultra": "Ultra"
+      }
+    },
+    "resolution": {
+      "label": "Resolution",
+      "description": "\"original\" or WIDTHxHEIGHT, e.g. 1920x1080"
+    },
+    "audio_source": {
+      "label": "Audio source",
+      "options": {
+        "default_output": "System output",
+        "default_input": "Microphone",
+        "both": "Output + microphone",
+        "none": "No audio"
+      }
+    },
+    "audio_codec": {
+      "label": "Audio codec",
+      "options": {
+        "opus": "Opus",
+        "aac": "AAC",
+        "flac": "FLAC"
+      }
+    },
+    "show_cursor": {
+      "label": "Show cursor"
+    },
+    "color_range": {
+      "label": "Color range",
+      "options": {
+        "limited": "Limited",
+        "full": "Full"
+      }
+    },
+    "copy_to_clipboard": {
+      "label": "Copy path to clipboard"
+    },
+    "hide_inactive": {
+      "label": "Hide widget when idle"
+    },
+    "replay_enabled": {
+      "label": "Enable replay buffer"
+    },
+    "replay_duration": {
+      "label": "Replay seconds"
+    },
+    "replay_storage": {
+      "label": "Replay storage",
+      "options": {
+        "ram": "RAM",
+        "disk": "Disk"
+      }
+    },
+    "restore_portal": {
+      "label": "Restore portal session"
+    }
   }
 }

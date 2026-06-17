@@ -1,6 +1,6 @@
 id = "noctalia/translator"
 name = "Translator"
-version = "1.0.1"
+version = "1.0.2"
 min_noctalia = "5.0.0"
 author = "noctalia"
 license = "MIT"
@@ -19,6 +19,6 @@ debounce_ms = 300  # wait for typing to settle before calling Google
   [[launcher_provider.setting]]
   key = "target_lang"
   type = "string"
-  label = "Default target language"
-  description = "Language code used when no language is given (e.g. en, fr, es)."
+  label_key = "settings.target_lang.label"
+  description_key = "settings.target_lang.description"
   default = "en"
